@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "677e5bf42520db30f56161fa"
+  },
+  "book_id": {
+    "$oid": "677e590ce6696c50d2153493"
+  },
+  "user_id": {
+    "$oid": "677e58c7e6696c50d215348f"
+  },
+  "content": "hello how are you check test",
+  "status": "rejected",
+  "rating": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e5c232520db30f56161fd"
+  },
+  "book_id": {
+    "$oid": "677e5949e6696c50d2153496"
+  },
+  "user_id": {
+    "$oid": "677e58c7e6696c50d215348f"
+  },
+  "content": "hello comment data testing",
+  "status": "approved",
+  "rating": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e5c3a2520db30f5616200"
+  },
+  "book_id": {
+    "$oid": "677e5949e6696c50d2153496"
+  },
+  "user_id": {
+    "$oid": "677e58c7e6696c50d215348f"
+  },
+  "content": "check testing comment data.",
+  "status": "pending",
+  "rating": 5,
+  "__v": 0
+}]

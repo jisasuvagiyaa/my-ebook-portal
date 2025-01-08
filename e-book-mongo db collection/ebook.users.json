@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "677e53c125b009494b19c3cb"
+  },
+  "username": "radha",
+  "password": "$2a$10$UScC6yLdfyr2VZNbhlS4ieHHpEwxbdIuX6pLYeMA6AlNxPMaRqZaK",
+  "role": "author",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e540b25b009494b19c3cd"
+  },
+  "username": "jisa",
+  "password": "$2a$10$z3N/bM/DILycWu9RUgp6MOj849i1GS5nCQO/.0r89q3wqROA5Cm.a",
+  "role": "reader",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e542525b009494b19c3cf"
+  },
+  "username": "brijesh",
+  "password": "$2a$10$ztoMc/I8uan1EalqM1Df3e50x3rnY/8VRT9p2jH44Oe.7VDvay6B2",
+  "role": "author",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e5525121e811392b2f5d0"
+  },
+  "username": "kanu",
+  "password": "$2a$10$ZUx2Z3azcebAtkTaveJKguk4F/WtQgqrfCBYijJOC1klRmlyHxv4m",
+  "role": "reader",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e58c7e6696c50d215348f"
+  },
+  "username": "mohan",
+  "password": "$2a$10$TWV5KV4K6i/fvWqGOtrhOe3NImruz62bQtJVoru.Ushe57eQrnEky",
+  "role": "author",
+  "__v": 0
+}]

@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "2d495db1-bced-4568-891e-cadd2e646012",
+		"name": "e-book-portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24537972",
+		"_collection_link": "https://dark-comet-631137.postman.co/workspace/Team-Workspace~7fd63646-9a88-4dce-87d3-0babfa66de07/collection/24537972-2d495db1-bced-4568-891e-cadd2e646012?action=share&source=collection_link&creator=24537972"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"radha\",\r\n    \"email\":\"radha@gmail.com\",\r\n    \"password\":\"Radha@123\",\r\n    \"role\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"brijesh\",\r\n    \"password\":\"Brijesh@123\",\r\n    \"role\":\"author\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/auth/loginUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"auth",
+						"loginUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2U1OGM3ZTY2OTZjNTBkMjE1MzQ4ZiIsImlhdCI6MTczNjMzMzUxNywiZXhwIjoxNzM4OTI1NTE3fQ.XYRFkOCSONGetMpEX6KhxxaXqnASPtiYGG6CFoDqGeo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2U1OGM3ZTY2OTZjNTBkMjE1MzQ4ZiIsImlhdCI6MTczNjMzMzUxNywiZXhwIjoxNzM4OTI1NTE3fQ.XYRFkOCSONGetMpEX6KhxxaXqnASPtiYGG6CFoDqGeo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"test title\",\r\n    \"category_id\":\"677e584ce6696c50d215348b\",\r\n    \"status\":\"draft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/books/createBook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"books",
+						"createBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"abc category\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/auth/createCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"auth",
+						"createCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/api/books/getBooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"books",
+						"getBooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBookById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/api/books/677e590ce6696c50d2153493",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"books",
+						"677e590ce6696c50d2153493"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/api/categories/getCategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"categories",
+						"getCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postComment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2U1OGM3ZTY2OTZjNTBkMjE1MzQ4ZiIsImlhdCI6MTczNjMzMzUxNywiZXhwIjoxNzM4OTI1NTE3fQ.XYRFkOCSONGetMpEX6KhxxaXqnASPtiYGG6CFoDqGeo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2U1OGM3ZTY2OTZjNTBkMjE1MzQ4ZiIsImlhdCI6MTczNjMzMzUxNywiZXhwIjoxNzM4OTI1NTE3fQ.XYRFkOCSONGetMpEX6KhxxaXqnASPtiYGG6CFoDqGeo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"book_id\":\"677e5949e6696c50d2153496\",\r\n    \"content\":\"check testing comment data.\",\r\n    \"rating\":\"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/comments/postComment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"comments",
+						"postComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Approve or Reject Comment",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "677e590ce6696c50d2153493"
+  },
+  "title": "test title",
+  "author_id": {
+    "$oid": "677e58c7e6696c50d215348f"
+  },
+  "category_id": {
+    "$oid": "677e584ce6696c50d215348b"
+  },
+  "status": "draft",
+  "views_count": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e5949e6696c50d2153496"
+  },
+  "title": "abc title",
+  "author_id": {
+    "$oid": "677e58c7e6696c50d215348f"
+  },
+  "category_id": {
+    "$oid": "677e584ce6696c50d215348b"
+  },
+  "status": "published",
+  "views_count": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e5950e6696c50d2153499"
+  },
+  "title": "xyz title",
+  "author_id": {
+    "$oid": "677e58c7e6696c50d215348f"
+  },
+  "category_id": {
+    "$oid": "677e584ce6696c50d215348b"
+  },
+  "status": "published",
+  "views_count": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e5963e6696c50d215349c"
+  },
+  "title": "demo title",
+  "author_id": {
+    "$oid": "677e58c7e6696c50d215348f"
+  },
+  "category_id": {
+    "$oid": "677e584ce6696c50d215348b"
+  },
+  "status": "draft",
+  "views_count": 0,
+  "__v": 0
+}]

@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "677e5834e6696c50d2153485"
+  },
+  "name": "abc category",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e583ee6696c50d2153487"
+  },
+  "name": "test category",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e5844e6696c50d2153489"
+  },
+  "name": "demo category",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e584ce6696c50d215348b"
+  },
+  "name": "xyz category",
+  "__v": 0
+}]
